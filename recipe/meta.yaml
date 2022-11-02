@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/NSLS-II-CSX/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 6c7479be91a2980610f065e656a9186ca5c91e863d96b0d7dceb18c497f55873
+  sha256: f609fd80f1e4caf84d068d77d471ff4c34883f8d6648bdd94c5fe159b8c479f7
 
 build:
   number: 2
@@ -57,5 +57,4 @@ about:
 extra:
   recipe-maintainers:
     - mrakitin
-    - kbeeperez
     - conda-forge/event-model
