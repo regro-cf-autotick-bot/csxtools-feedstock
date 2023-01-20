@@ -1,16 +1,16 @@
 {% set name = "csxtools" %}
-{% set version = "0.1.16" %}
+{% set version = "0.1.18" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/NSLS-II-CSX/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: f609fd80f1e4caf84d068d77d471ff4c34883f8d6648bdd94c5fe159b8c479f7
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 741cbe5b95234f40dbedc1dda3b45b5270488d35df00525acec33107d0dfa713
 
 build:
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   skip: true  # [py<37]
 
