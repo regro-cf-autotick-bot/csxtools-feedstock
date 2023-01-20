@@ -1,5 +1,5 @@
 {% set name = "csxtools" %}
-{% set version = "0.1.17" %}
+{% set version = "0.1.18" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7daf451c6fe0ecad62c7334c0dbd76a876dccb9b61b5ca646230ac0fe7af6549
+  sha256: 741cbe5b95234f40dbedc1dda3b45b5270488d35df00525acec33107d0dfa713
 
 build:
   number: 0
